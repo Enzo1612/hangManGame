@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
     --light-blue: #06AED5;
     --dark-blue: #086788;
@@ -10,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -29,12 +32,12 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: underline;
 }
 
 header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 header li {
@@ -45,12 +48,13 @@ header li {
 header li a {
     text-decoration: none;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    transition: .3s;
 }
 
 header li a:hover {
     text-decoration: underline;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     transition: .3s;
 }
 
@@ -110,7 +114,7 @@ header li a:hover {
 }
 
 .container-left {
-    margin: 5%;
+    margin: 5% 5% 2% 5%;
     width: 60vw;
     height: 40vh;
     display: flex;
@@ -175,7 +179,7 @@ header li a:hover {
     cursor: pointer;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-left: 3px solid var(--dark-blue);
+    border-left: 2px solid var(--dark-blue);
 }
 
 #answer::placeholder {
@@ -194,7 +198,7 @@ header li a:hover {
 }
 
 .container-right {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
     width: 40vw;
     height: 40vh;
     display: flex;
@@ -207,25 +211,34 @@ header li a:hover {
     height: 30vh;
     margin: 0 15% 0 10%;
     background-color: var(--red);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
 }
 
 .keyboard {
     display: flex;
-    margin-left: 5%;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
-    width: 100%;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 3vh;
 }
 
 .key {
-    padding: 2% 3%;
-    border-radius: 10px;
+    padding: 1vh 2vw;
+    margin: 1px;
+    border-radius: 5px;
     border: 3px solid var(--white);
     background-color: var(--dark-blue);
     color: var(--yellow);
-    font-size: 1.2rem;
+    font-size: calc(.5rem + 1vh);
+}
+
+.key p {
+    text-align: center;
+    font-size: calc(.5rem + 1vh);
 }
 
 .key:hover {
@@ -269,7 +282,7 @@ header li a:hover {
 
 .used-letters {
     margin: 5% 5% 0 5%;
-    height: 90%;
+    height: 80%;
     width: 40%;
     background-color: var(--light-blue);
     border-radius: 5px;
@@ -277,7 +290,7 @@ header li a:hover {
 
 .hangman {
     margin: 5% 5% 0 5%;
-    height: 90%;
+    height: 80%;
     width: 40%;
     background-color: var(--white);
     border-radius: 5px;
