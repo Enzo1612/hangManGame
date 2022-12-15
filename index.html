@@ -27,9 +27,25 @@
         </div>
         <div class="container">
             <div class="container-left">
-                <div class="hidden-word" id="hidden-word"></div>
+                    <div class="hidden-word" id="hidden-word"></div>
+                <div class="buttons">
+                    <button>RETRY</button>
+                    <div class="submit-answer">
+                        <input type="text" name="answer" id="answer" placeholder="submit your answer">
+                        <input type="button" id='confirm-answer' value="OK">
+                    </div>
+                </div>
             </div>
-            <div class="container-right"></div>
+            <div class="container-right">
+                <div class="score">
+                    <p>RESULT : </p>
+                    <p id="result"></p>
+                </div>
+                <div class="wrong-answer">
+                    <div class="hangman"></div> 
+                    <div class="used-letters"></div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

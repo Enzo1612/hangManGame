@@ -54,12 +54,6 @@ header li a:hover {
     transition: .3s;
 }
 
-.underscore {
-    height: .3vh;
-    width: 5vw;
-    background-color: var(--red);
-}
-
 .user-word {
     position: absolute;
     height: 100vh;
@@ -120,8 +114,83 @@ header li a:hover {
     width: 60vw;
     height: 40vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: var(--light-blue);
     border-radius: 10px;
+}
+
+.hidden-word {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-blue);
+    margin: 5% 10%;
+}
+
+.underscore {
+    height: .3vh;
+    width: 5vw;
+    background-color: var(--red);
+    margin-left: 1%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    margin: 0 10% 0 10%;
+}
+
+.buttons button,input {
+    height: 8vh;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border: none;
+}
+
+.buttons button:hover,input:hover {
+    opacity:.9;
+}
+
+.buttons button {
+    width: 15vw;
+    cursor: pointer;
+}
+
+.buttons #answer {
+    width: 15vw;
+    text-align: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.buttons #confirm-answer {
+    width: 5vw;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 3px solid var(--dark-blue);
+}
+
+#answer::placeholder {
+    color: var(--dark-blue);
+    opacity:.5;
+    text-align: center;
+    font-size: .8rem;
+}
+
+#answer:focus {
+    outline: none;
+}
+
+.submit-answer {
+    display: flex;
 }
 
 .container-right {
@@ -159,10 +228,57 @@ header li a:hover {
     font-size: 1.2rem;
 }
 
+.key:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
 .second-row {
     margin-left: 5%;
 }
 
 .third-row {
     margin-left: 10%;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrong-answer {
+    display: flex;
+    height: 100%;
+}
+
+.score {
+    margin: 5%;
+    height: 15%;
+    width: 90%;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.score p {
+    font-size: 1.2rem;
+    margin: 0 4%;
+}
+
+.used-letters {
+    margin: 5% 5% 0 5%;
+    height: 90%;
+    width: 40%;
+    background-color: var(--light-blue);
+    border-radius: 5px;
+}
+
+.hangman {
+    margin: 5% 5% 0 5%;
+    height: 90%;
+    width: 40%;
+    background-color: var(--white);
+    border-radius: 5px;
 }
