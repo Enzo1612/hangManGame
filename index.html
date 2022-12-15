@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Enzo</h2>
+        <h1>HangMan</h1>
+        <ul>
+            <li><a href="about.html" target="_blank">Contact Me</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="user-word" id="user-word">
+            <p>Enter a word: </p>
+
+                <div class="input" id="input">
+                    <input type="text" name="user-word-placeholder" id="user-word-placeholder" required>
+                    <input type="submit" id='submit' value="OK">
+                </div>
+        </div>
+        <div class="container">
+            <div class="container-left">
+                <div class="hidden-word" id="hidden-word"></div>
+            </div>
+            <div class="container-right"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-bottom">
+            <div class="keyboard">
+
+                <div class="first-row">
+                    <button class="key" id="q">q</button>
+                    <button class="key" id="w">w</button>
+                    <button class="key" id="e">e</button>
+                    <button class="key" id="r">r</button>
+                    <button class="key" id="t">t</button>
+                    <button class="key" id="y">y</button>
+                    <button class="key" id="u">u</button>
+                    <button class="key" id="i">i</button>
+                    <button class="key" id="o">o</button>
+                    <button class="key" id="p">p</button>
+                </div>
+
+                <div class="second-row">
+                    <button class="key" id="a">a</button>
+                    <button class="key" id="s">s</button>
+                    <button class="key" id="d">d</button>
+                    <button class="key" id="f">f</button>
+                    <button class="key" id="g">g</button>
+                    <button class="key" id="h">h</button>
+                    <button class="key" id="j">j</button>
+                    <button class="key" id="k">k</button>
+                    <button class="key" id="l">l</button>
+                </div>
+
+                <div class="third-row">
+                    <button class="key" id="z">z</button>
+                    <button class="key" id="x">x</button>
+                    <button class="key" id="c">c</button>
+                    <button class="key" id="v">v</button>
+                    <button class="key" id="b">b</button>
+                    <button class="key" id="n">n</button>
+                    <button class="key" id="m">m</button>
+                </div>
+                           
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
