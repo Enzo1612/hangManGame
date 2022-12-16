@@ -40,35 +40,36 @@ header h2 {
     font-size: 1.5rem;
 }
 
-header li {
-    list-style: none;
-    display: flex;
-}
-
-header li a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1rem;
-    transition: .3s;
-}
-
-header li a:hover {
-    text-decoration: underline;
-    font-size: 1.2rem;
-    transition: .3s;
-}
-
 .user-word {
-    position: absolute;
     height: 100vh;
     width: 100vw;
     display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win, .lose{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: none;
     background-color: rgba(0, 0, 0, .85);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.win button, .lose button {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 5px;
+    padding: 2% 4%;
+    margin-top: 5%;
+}
 
 #user-word-placeholder {
     color: var(--dark-blue);
@@ -119,9 +120,14 @@ header li a:hover {
     height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     background-color: var(--light-blue);
     border-radius: 10px;
+}
+
+#retry-button {
+    width: 30vw;
 }
 
 #hidden-word {
@@ -165,36 +171,6 @@ header li a:hover {
 .buttons button {
     width: 15vw;
     cursor: pointer;
-}
-
-.buttons #answer {
-    width: 15vw;
-    text-align: center;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.buttons #confirm-answer {
-    width: 5vw;
-    cursor: pointer;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 2px solid var(--dark-blue);
-}
-
-#answer::placeholder {
-    color: var(--dark-blue);
-    opacity:.5;
-    text-align: center;
-    font-size: .8rem;
-}
-
-#answer:focus {
-    outline: none;
-}
-
-.submit-answer {
-    display: flex;
 }
 
 .container-right {
@@ -278,4 +254,39 @@ header li a:hover {
     width: 90%;
     background-color: var(--white);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .container-bottom {
+        width: 85vw;
+        border-radius: 5px;
+        margin: 5% auto;
+    }
+    .key {
+        padding: .5vh 1vw;
+        margin: 1px;
+        border-radius: 5px;
+        border: 3px solid var(--white);
+        background-color: var(--dark-blue);
+        color: var(--yellow);
+        font-size: calc(.5rem + 1vh);
+    }
+
+    #user-word-placeholder {
+        color: var(--dark-blue);
+        padding: 3%;
+        background-color: var(--white);
+        border: 5px solid var(--dark-blue);
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .score p {
+        font-size: .7rem;
+        margin: 0 2%;
+    }
 }

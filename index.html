@@ -12,9 +12,6 @@
     <header>
         <h2>Enzo</h2>
         <h1>HangMan</h1>
-        <ul>
-            <li><a href="about.html" target="_blank">Contact Me</a></li>
-        </ul>
     </header>
     <main>
         <div class="user-word" id="user-word">
@@ -25,23 +22,35 @@
                     <input type="submit" id='submit' value="OK">
                 </div>
         </div>
+        <div class="win" id="win">
+            <h1>You win!!!</h1>
+            <button id="restart" onClick="window.location.reload(true)">RESTART</button>
+        </div>
+        <div class="lose" id="lose">
+            <h1>You lose</h1>
+            <button id="restart" onClick="window.location.reload(true)">RESTART</button>
+        </div>
         <div class="container">
             <div class="container-left">
                     <div class="hidden-word" id="hidden-word"></div>
                 <div class="buttons">
-                    <button id="retry" onClick="window.location.reload(true)">RETRY</button>
-                    <div class="submit-answer">
-                        <input type="text" name="answer" id="answer" placeholder="submit your answer">
-                        <input type="button" id='confirm-answer' value="OK">
-                    </div>
+                    <button id="retry-button" onClick="window.location.reload(true)">RETRY</button>
                 </div>
             </div>
             <div class="container-right">
                 <div class="score">
-                    <p>RESULT : </p>
+                    <p>RESULT: </p>
                     <p id="result"></p>
                 </div>
-                <div class="hangman"></div> 
+                <div class="hangman">
+                    <div id="hangmanDrawing1"></div>
+                    <div id="hangmanDrawing2"></div>
+                    <div id="hangmanDrawing3"></div>
+                    <div id="hangmanDrawing4"></div>
+                    <div id="hangmanDrawing5"></div>
+                    <div id="hangmanDrawing6"></div>
+                    <div id="hangmanDrawing7"></div>
+                </div> 
             </div>
         </div>
     </main>
