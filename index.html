@@ -29,7 +29,7 @@
             <div class="container-left">
                     <div class="hidden-word" id="hidden-word"></div>
                 <div class="buttons">
-                    <button id="retry">RETRY</button>
+                    <button id="retry" onClick="window.location.reload(true)">RETRY</button>
                     <div class="submit-answer">
                         <input type="text" name="answer" id="answer" placeholder="submit your answer">
                         <input type="button" id='confirm-answer' value="OK">
@@ -41,10 +41,7 @@
                     <p>RESULT : </p>
                     <p id="result"></p>
                 </div>
-                <div class="wrong-answer">
-                    <div class="hangman"></div> 
-                    <div class="used-letters"></div>
-                </div>
+                <div class="hangman"></div> 
             </div>
         </div>
     </main>

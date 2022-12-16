@@ -124,7 +124,7 @@ header li a:hover {
     border-radius: 10px;
 }
 
-.hidden-word {
+#hidden-word {
     height: 50%;
     width: 80%;
     display: flex;
@@ -204,6 +204,8 @@ header li a:hover {
     display: flex;
     background-color: var(--yellow);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-bottom {
@@ -254,18 +256,8 @@ header li a:hover {
     margin-left: 10%;
 }
 
-.container-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.wrong-answer {
-    display: flex;
-    height: 100%;
-}
-
 .score {
-    margin: 5%;
+    margin: 5% 5% 0 5%;
     height: 15%;
     width: 90%;
     border-radius: 5px;
@@ -280,18 +272,10 @@ header li a:hover {
     margin: 0 4%;
 }
 
-.used-letters {
-    margin: 5% 5% 0 5%;
-    height: 80%;
-    width: 40%;
-    background-color: var(--light-blue);
-    border-radius: 5px;
-}
-
 .hangman {
-    margin: 5% 5% 0 5%;
+    margin: 5%;
     height: 80%;
-    width: 40%;
+    width: 90%;
     background-color: var(--white);
     border-radius: 5px;
 }
