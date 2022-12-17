@@ -195,11 +195,93 @@ header h2 {
     margin: 5% 5% 0 5%;
     width: 40vw;
     height: 40vh;
-    display: flex;
     background-color: var(--yellow);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.hangman {
+    margin: 5%;
+    height: 80%;
+    width: 90%;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hangman div {
+    position: absolute;
+    display: none;
+}
+
+#hangmanDrawing1 {
+    height: 12vw;
+    width: .3vw;
+    background-color: black;
+    top: calc(50% - 6vw);
+    right: calc(15% + 12vw - 2px);
+}
+
+#hangmanDrawing2 {
+    height: 12vw;
+    width: .3vw;
+    background-color: black;
+    top: calc(50% - 12vw);
+    right: calc(15% + 6vw - 2px);
+    rotate: 90deg;
+}
+
+#hangmanDrawing3 {
+    height: 3vw;
+    width: .3vw;
+    background-color: black;
+    top: calc(50% - 6vw);
+    right: calc(15% - .15vw);
+}
+
+#hangmanDrawing4 {
+    height: 3vw;
+    width: 3vw;
+    border: 3px solid black;
+    top: calc(50% - 3vw - 1px);
+    border-radius: 50%;
+    right: calc(15% - 1.5vw); 
+}
+
+#hangmanDrawing5 {
+    height: 6vw;
+    width: .3vw;
+    background-color: black;
+    top: 50%;
+    right: calc(15% - .15vw); 
+}
+
+#hangmanDrawing6 {
+    height: .3vw;
+    width: 6vw;
+    background-color: black;
+    border-bottom: transparent;
+    border-right: transparent;
+    position: absolute;
+    top:50%;
+    right: calc(15% - 3vw);
+}
+
+#hangmanDrawing7 {
+    height: 3vw;
+    width: 3vw;
+    border: solid 3px black;
+    rotate: 45deg;
+    border-bottom: transparent;
+    border-right: transparent;
+    margin-bottom: 10%;
+    top: 50%;
+    top: calc(50% + 6vw);
+    right: calc(15% - 1.5vw); 
 }
 
 .container-bottom {
@@ -264,18 +346,6 @@ header h2 {
 .score p {
     font-size: 1.2rem;
     margin: 0 4%;
-}
-
-.hangman {
-    margin: 5%;
-    height: 80%;
-    width: 90%;
-    background-color: var(--white);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (max-width: 700px) {

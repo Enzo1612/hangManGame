@@ -214,5 +214,34 @@ keys.forEach(key => {
         let lose = document.getElementById('lose');
         lose.style.display = 'flex';
     }
+
+    if (error == 1) {
+        document.getElementById('hangmanDrawing1').style.display = 'block';
+    }
+
+    if (error == 2) {
+        document.getElementById('hangmanDrawing2').style.display = 'block';
+    }
+
+    if (error == 3) {
+        document.getElementById('hangmanDrawing3').style.display = 'block';
+    }
+
+    if (error == 4) {
+        document.getElementById('hangmanDrawing4').style.display = 'block';
+    }
+
+    if (error == 5) {
+        document.getElementById('hangmanDrawing5').style.display = 'block';
+    }
+
+    if (error == 6) {
+        document.getElementById('hangmanDrawing6').style.display = 'block';
+    }
+
+    if (error == 7) {
+        document.getElementById('hangmanDrawing7').style.display = 'block';
+    }
+
 })})
   
