@@ -51,6 +51,22 @@ header h2 {
     align-items: center;
 }
 
+#randomWord {
+    margin-top: 5%;
+    padding: 2% 8%;
+    border-radius: 5px;
+    border: 5px solid var(--dark-blue);
+    background-color: var(--white);
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#randomWord:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
 .win, .lose{
     position: absolute;
     height: 100vh;
@@ -97,12 +113,14 @@ header h2 {
 }
 
 #input #submit {
-    padding: 3%;
+    padding: 5%;
     border: 5px solid var(--dark-blue);
     margin-left: -5px;
     background-color: var(--white);
     color: var(--dark-blue);
     font-size: 1.5rem;
+    text-align: center;
+    line-height: 5%;
 }
 
 #input #submit:hover {

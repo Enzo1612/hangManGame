@@ -6,17 +6,19 @@ let userWord = document.getElementById('user-word');
 let userWordPlaceholder = document.getElementById('user-word-placeholder');
 
 let word = '';
+
+let regex = /[A-Za-z]/gm
 //hide the page and get the word value
 
 submit.addEventListener("click", function hide() {
-    if (userWordPlaceholder.value!== '') {
+    if (userWordPlaceholder.value !== '') {
     userWord.style.display  = 'none';
     word = userWordPlaceholder.value.toLowerCase();
     userWordPlaceholder.value = '';
     console.log(word);
-    appendChar();
-    
-    addUnderscore()
+    appendChar();    
+    addUnderscore();
+
 
 } else {
     alert('Invalid Input');
@@ -37,17 +39,104 @@ let hiddenWord = document.getElementById('hidden-word');
 
 function addUnderscore() {
     let hiddenWord = document.getElementById('hidden-word');
-    for (let char in word) {
+    for (let char in wordArr) {
         hiddenWord.appendChild(underscore.cloneNode(true));
         console.log(char);
     }
 }
 
+//get a random word
+
+function getRandomWord() {
+    word = randomWordArr[randomNum]
+    appendChar();
+    addUnderscore();
+    return word, wordArr;
+}
+
+let randomWordButton = document.getElementById('randomWord');
+randomWordButton.addEventListener('click', () => {
+    word = getRandomWord();
+    userWord.style.display = 'none';
+
+})
+
+//get random number
+function getRandomNumber() {
+    return Math.floor(Math.random() * 50);
+  }
+  
+  let randomNum = getRandomNumber();
+  
+
+//word data base 
+let randomWordArr = [
+    "time",
+    "year",
+    "way",
+    "day",
+    "man",
+    "thing",
+    "woman",
+    "life",
+    "hand",
+    "part",
+    "place",
+    "case",
+    "group",
+    "problem",
+    "eye",
+    "friend",
+    "point",
+    "home",
+    "water",
+    "room",
+    "mother",
+    "area",
+    "money",
+    "story",
+    "fact",
+    "month",
+    "lot",
+    "right",
+    "study",
+    "book",
+    "eye",
+    "job",
+    "word",
+    "business",
+    "issue",
+    "side",
+    "kind",
+    "head",
+    "house",
+    "service",
+    "friend",
+    "father",
+    "power",
+    "hour",
+    "game",
+    "line",
+    "end",
+    "member",
+    "law",
+    "car",
+    "city",
+    "community",
+    "name",
+    "president",
+    "team",
+    "minute",
+    "idea",
+    "kid"
+  ];
 //replace the underscore with the corresponding letter
 let wordArr = [];
 function appendChar() {
     for (let char in word) {
-        wordArr.push(word[char]);
+        if(word[char].match(regex)){
+            wordArr.push(word[char]);
+        }
         }
     return wordArr;
 }
@@ -126,5 +215,4 @@ keys.forEach(key => {
         lose.style.display = 'flex';
     }
 })})
-
-
+  
