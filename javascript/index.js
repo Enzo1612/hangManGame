@@ -11,7 +11,7 @@ let regex = /[A-Za-z]/gm
 //hide the page and get the word value
 
 submit.addEventListener("click", function hide() {
-    if (userWordPlaceholder.value !== '') {
+    if (userWordPlaceholder.value !== '' && regex.test(userWordPlaceholder.value)) {
     userWord.style.display  = 'none';
     word = userWordPlaceholder.value.toLowerCase();
     userWordPlaceholder.value = '';
@@ -206,7 +206,7 @@ keys.forEach(key => {
         result.style.color = 'var(--red)';
     }
     
-    if (score == word.length) {
+    if (score == wordArr.length) {
         let win = document.getElementById('win');
         win.style.display = 'flex';    
     }

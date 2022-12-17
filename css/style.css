@@ -364,13 +364,12 @@ header h2 {
         font-size: calc(.5rem + 1vh);
     }
 
-    #user-word-placeholder {
-        color: var(--dark-blue);
-        padding: 3%;
-        background-color: var(--white);
-        border: 5px solid var(--dark-blue);
-        border-radius: 5px;
-        font-size: 1rem;
+    .user-word {
+        align-items: flex-start;
+    }
+
+    .user-word p,button,input  {
+        margin-left: 5vw;
     }
 
     .score p {
@@ -383,7 +382,7 @@ header h2 {
         width: .2vw;
         background-color: black;
         top: calc(40% - 4vw);
-        right: calc(15% + 8vw - 1.4px);
+        right: calc(15% + 8vw);
     }
     
     #hangmanDrawing2 {
@@ -391,7 +390,7 @@ header h2 {
         width: .2vw;
         background-color: black;
         top: calc(40% - 8vw);
-        right: calc(15% + 4vw - 1.4px);
+        right: calc(15% + 4vw);
         rotate: 90deg;
     }
     
@@ -400,13 +399,13 @@ header h2 {
         width: .3vw;
         background-color: black;
         top: calc(40% - 4vw);
-        right: calc(15% - .1vw);
+        right: calc(15%);
     }
     
     #hangmanDrawing4 {
         height: 2vw;
         width: 2vw;
-        border: 3px solid black;
+        border: 1px solid black;
         top: calc(40% - 2vw - 1px);
         border-radius: 50%;
         right: calc(15% - 1vw); 
