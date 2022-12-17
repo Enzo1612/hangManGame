@@ -53,7 +53,7 @@ header h2 {
 
 #randomWord {
     margin-top: 5%;
-    padding: 2% 8%;
+    padding: 2vh 4vw;
     border-radius: 5px;
     border: 5px solid var(--dark-blue);
     background-color: var(--white);
