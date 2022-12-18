@@ -82,9 +82,12 @@ header h2 {
     background-color: var(--white);
     color: var(--dark-blue);
     border: none;
+    border: 3px solid var(--dark-blue);
     border-radius: 5px;
     padding: 2% 4%;
     margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1rem;
 }
 
 #user-word-placeholder {
@@ -378,7 +381,7 @@ header h2 {
         background-color: var(--white);
         border: 5px solid var(--dark-blue);
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: calc(1rem - 1vw);
     }
 
     .score p {

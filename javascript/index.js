@@ -15,7 +15,6 @@ submit.addEventListener("click", function hide() {
     userWord.style.display  = 'none';
     word = userWordPlaceholder.value.toLowerCase();
     userWordPlaceholder.value = '';
-    console.log(word);
     appendChar();    
     addUnderscore();
 
@@ -51,7 +50,7 @@ function getRandomWord() {
     word = randomWordArr[randomNum]
     appendChar();
     addUnderscore();
-    return word, wordArr;
+    return word;
 }
 
 let randomWordButton = document.getElementById('randomWord');
@@ -213,6 +212,7 @@ keys.forEach(key => {
     if (error == 7) {
         let lose = document.getElementById('lose');
         lose.style.display = 'flex';
+        document.getElementById('loseMessage').textContent = 'The word was ' + word;
     }
 
     if (error == 1) {
