@@ -409,10 +409,10 @@ header h2 {
 
     #hangmanDrawing1 {
         height: 4vw;
-        width: .3vw;
+        width: .2vw;
         background-color: black;
-        top: calc(50% - 8.5vw);
-        right: calc(15% + 8vw - 2px);
+        top: calc(40% + 2vw);
+        right: calc(15% + 8.5vw - 2px);
         rotate: 90deg;
     }
     
@@ -435,10 +435,10 @@ header h2 {
 
     #hangmanDrawing4 {
         height: 3vw;
-        width: .3vw;
+        width: .2vw;
         background-color: black;
-        top: calc(50% - 14.5vw);
-        right: calc(15% + 7vw - 2px);
+        top: calc(40% - 4vw);
+        right: calc(15% + 7.5vw - 2px);
         rotate: 45deg;
     }
     
@@ -481,7 +481,7 @@ header h2 {
     #hangmanDrawing9 {
         height: 2vw;
         width: 2vw;
-        border: solid 2px black;
+        border: solid 1px black;
         rotate: 45deg;
         border-bottom: transparent;
         border-right: transparent;
@@ -572,7 +572,7 @@ header h2 {
         border-bottom: transparent;
         border-right: transparent;
         margin-bottom: 10%;
-        top: calc(50% + 4vw);
+        top: calc(50% + 4.25vw);
         right: calc(15% - 1vw); 
     }
 }
