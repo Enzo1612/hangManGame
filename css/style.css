@@ -222,6 +222,15 @@ header h2 {
 }
 
 #hangmanDrawing1 {
+    height: 6vw;
+    width: .3vw;
+    background-color: black;
+    top: calc(50% + 3vw);
+    right: calc(15% + 12vw - 2px);
+    rotate: 90deg;
+}
+
+#hangmanDrawing2 {
     height: 12vw;
     width: .3vw;
     background-color: black;
@@ -229,7 +238,7 @@ header h2 {
     right: calc(15% + 12vw - 2px);
 }
 
-#hangmanDrawing2 {
+#hangmanDrawing3 {
     height: 12vw;
     width: .3vw;
     background-color: black;
@@ -238,7 +247,16 @@ header h2 {
     rotate: 90deg;
 }
 
-#hangmanDrawing3 {
+#hangmanDrawing4 {
+    height: 4vw;
+    width: .3vw;
+    background-color: black;
+    top: calc(50% - 6.5vw);
+    right: calc(15% + 10.5vw - 2px);
+    rotate: 45deg;
+}
+
+#hangmanDrawing5 {
     height: 3vw;
     width: .3vw;
     background-color: black;
@@ -246,7 +264,7 @@ header h2 {
     right: calc(15% - .15vw);
 }
 
-#hangmanDrawing4 {
+#hangmanDrawing6 {
     height: 3vw;
     width: 3vw;
     border: 3px solid black;
@@ -255,7 +273,7 @@ header h2 {
     right: calc(15% - 1.5vw); 
 }
 
-#hangmanDrawing5 {
+#hangmanDrawing7 {
     height: 6vw;
     width: .3vw;
     background-color: black;
@@ -263,7 +281,7 @@ header h2 {
     right: calc(15% - .15vw); 
 }
 
-#hangmanDrawing6 {
+#hangmanDrawing8 {
     height: .3vw;
     width: 6vw;
     background-color: black;
@@ -274,7 +292,7 @@ header h2 {
     right: calc(15% - 3vw);
 }
 
-#hangmanDrawing7 {
+#hangmanDrawing9 {
     height: 3vw;
     width: 3vw;
     border: solid 3px black;
@@ -390,6 +408,15 @@ header h2 {
     }
 
     #hangmanDrawing1 {
+        height: 4vw;
+        width: .3vw;
+        background-color: black;
+        top: calc(50% - 8.5vw);
+        right: calc(15% + 8vw - 2px);
+        rotate: 90deg;
+    }
+    
+    #hangmanDrawing2 {
         height: 8vw;
         width: .2vw;
         background-color: black;
@@ -397,7 +424,7 @@ header h2 {
         right: calc(15% + 8vw);
     }
     
-    #hangmanDrawing2 {
+    #hangmanDrawing3 {
         height: 8vw;
         width: .2vw;
         background-color: black;
@@ -405,8 +432,17 @@ header h2 {
         right: calc(15% + 4vw);
         rotate: 90deg;
     }
+
+    #hangmanDrawing4 {
+        height: 3vw;
+        width: .3vw;
+        background-color: black;
+        top: calc(50% - 14.5vw);
+        right: calc(15% + 7vw - 2px);
+        rotate: 45deg;
+    }
     
-    #hangmanDrawing3 {
+    #hangmanDrawing5 {
         height: 2vw;
         width: .3vw;
         background-color: black;
@@ -414,7 +450,7 @@ header h2 {
         right: calc(15%);
     }
     
-    #hangmanDrawing4 {
+    #hangmanDrawing6 {
         height: 2vw;
         width: 2vw;
         border: 1px solid black;
@@ -423,7 +459,7 @@ header h2 {
         right: calc(15% - 1vw); 
     }
     
-    #hangmanDrawing5 {
+    #hangmanDrawing7 {
         height: 4vw;
         width: .3vw;
         background-color: black;
@@ -431,7 +467,7 @@ header h2 {
         right: calc(15% - .1vw); 
     }
     
-    #hangmanDrawing6 {
+    #hangmanDrawing8 {
         height: .2vw;
         width: 4vw;
         background-color: black;
@@ -442,7 +478,7 @@ header h2 {
         right: calc(15% - 2vw);
     }
     
-    #hangmanDrawing7 {
+    #hangmanDrawing9 {
         height: 2vw;
         width: 2vw;
         border: solid 2px black;
@@ -456,7 +492,17 @@ header h2 {
 }
 
 @media (min-width: 1200px) {
+
     #hangmanDrawing1 {
+        height: 4vw;
+        width: .2vw;
+        background-color: black;
+        top: calc(50% + 2vw);
+        right: calc(15% + 8vw - 2px);
+        rotate: 90deg;
+    }
+
+    #hangmanDrawing2 {
         height: 8vw;
         width: .2vw;
         background-color: black;
@@ -464,7 +510,7 @@ header h2 {
         right: calc(15% + 8vw - 1.4px);
     }
     
-    #hangmanDrawing2 {
+    #hangmanDrawing3 {
         height: 8vw;
         width: .2vw;
         background-color: black;
@@ -472,8 +518,17 @@ header h2 {
         right: calc(15% + 4vw - 1.4px);
         rotate: 90deg;
     }
+
+    #hangmanDrawing4 {
+        height: 3vw;
+        width: .2vw;
+        background-color: black;
+        top: calc(50% - 4.5vw);
+        right: calc(15% + 7vw - 2px);
+        rotate: 45deg;
+    }
     
-    #hangmanDrawing3 {
+    #hangmanDrawing5 {
         height: 2vw;
         width: .2vw;
         background-color: black;
@@ -481,7 +536,7 @@ header h2 {
         right: calc(15% - .1vw);
     }
     
-    #hangmanDrawing4 {
+    #hangmanDrawing6 {
         height: 2vw;
         width: 2vw;
         border: 3px solid black;
@@ -490,7 +545,7 @@ header h2 {
         right: calc(15% - 1vw); 
     }
     
-    #hangmanDrawing5 {
+    #hangmanDrawing7 {
         height: 4vw;
         width: .2vw;
         background-color: black;
@@ -498,7 +553,7 @@ header h2 {
         right: calc(15% - .1vw); 
     }
     
-    #hangmanDrawing6 {
+    #hangmanDrawing8 {
         height: .2vw;
         width: 4vw;
         background-color: black;
@@ -509,7 +564,7 @@ header h2 {
         right: calc(15% - 2vw);
     }
     
-    #hangmanDrawing7 {
+    #hangmanDrawing9 {
         height: 2vw;
         width: 2vw;
         border: solid 3px black;

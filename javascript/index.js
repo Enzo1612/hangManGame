@@ -209,7 +209,7 @@ keys.forEach(key => {
         let win = document.getElementById('win');
         win.style.display = 'flex';    
     }
-    if (error == 7) {
+    if (error == 9) {
         let lose = document.getElementById('lose');
         lose.style.display = 'flex';
         document.getElementById('loseMessage').textContent = 'The word was ' + word;
@@ -241,6 +241,14 @@ keys.forEach(key => {
 
     if (error == 7) {
         document.getElementById('hangmanDrawing7').style.display = 'block';
+    }
+
+    if (error == 8) {
+        document.getElementById('hangmanDrawing8').style.display = 'block';
+    }
+
+    if (error == 9) {
+        document.getElementById('hangmanDrawing9').style.display = 'block';
     }
 
 })})
