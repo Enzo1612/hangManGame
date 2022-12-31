@@ -91,8 +91,12 @@ header h2 {
     font-size: 1rem;
 }
 
-.win h1, .lose h1 {
-    color: var(--light-blue);
+.lose h1 {
+    color: var(--red);
+}
+
+.win h1 {
+    color: var(--yellow);
 }
 
 #user-word-placeholder {
@@ -675,5 +679,9 @@ header h2 {
     --white: #181818;
     --red: #DD1C1A;
     --black: #FFF1D0;
-}
+    }
+    #loseMessage {
+        color: var(--light-blue);
+    }
+
 }
