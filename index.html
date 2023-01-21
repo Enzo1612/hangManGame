@@ -1,104 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Play the hangman game on this website" />
     <title>HangMan</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="javascript/index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h2>Enzo</h2>
-        <h1>HangMan</h1>
+      <h2 id="enzo">Enzo</h2>
+      <h1 id="hangmanTitle">HangMan</h1>
     </header>
     <main>
-        <div class="user-word" id="user-word">
-            <p>Enter a word: </p>
+      <div class="user-word" id="user-word">
+        <p>Enter a word:</p>
 
-                <div class="input" id="input">
-                    <input type="text" name="user-word-placeholder" id="user-word-placeholder" required>
-                    <input type="submit" id='submit' value="OK">
-                </div>
-                <button id="randomWord">RANDOM WORD</button>
+        <div class="input" id="input">
+          <label for="user-word-placeholder">
+            <input
+              type="text"
+              name="user-word-placeholder"
+              id="user-word-placeholder"
+              required
+            />
+          </label>
+          <label for="submit">
+            <input type="submit" id="submit" value="OK" />
+          </label>
         </div>
-        <div class="win" id="win">
-            <h1>You win!!!</h1>
-            <button id="restart" onClick="window.location.reload(true)">RESTART</button>
+        <button id="randomWord">RANDOM WORD</button>
+      </div>
+      <div class="win" id="win">
+        <h1>You win!!!</h1>
+        <button id="restart" onClick="window.location.reload(true)">
+          RESTART
+        </button>
+      </div>
+      <div class="lose" id="lose">
+        <h1>You lose</h1>
+        <button id="restart" onClick="window.location.reload(true)">
+          RESTART
+        </button>
+        <h2 id="loseMessage"></h2>
+      </div>
+      <div class="container">
+        <div class="container-left">
+          <div class="hidden-word" id="hidden-word"></div>
+          <div class="buttons">
+            <button id="retry-button" onClick="window.location.reload(true)">
+              RETRY
+            </button>
+          </div>
         </div>
-        <div class="lose" id="lose">
-            <h1>You lose</h1>
-            <button id="restart" onClick="window.location.reload(true)">RESTART</button>
-            <h2 id="loseMessage"></h2>
+        <div class="container-right">
+          <div class="score">
+            <p>RESULT:</p>
+            <p id="result"></p>
+          </div>
+          <div class="hangman">
+            <div id="hangmanDrawing1"></div>
+            <div id="hangmanDrawing2"></div>
+            <div id="hangmanDrawing3"></div>
+            <div id="hangmanDrawing4"></div>
+            <div id="hangmanDrawing5"></div>
+            <div id="hangmanDrawing6"></div>
+            <div id="hangmanDrawing7"></div>
+            <div id="hangmanDrawing8"></div>
+            <div id="hangmanDrawing9"></div>
+          </div>
         </div>
-        <div class="container">
-            <div class="container-left">
-                    <div class="hidden-word" id="hidden-word"></div>
-                <div class="buttons">
-                    <button id="retry-button" onClick="window.location.reload(true)">RETRY</button>
-                </div>
-            </div>
-            <div class="container-right">
-                <div class="score">
-                    <p>RESULT: </p>
-                    <p id="result"></p>
-                </div>
-                <div class="hangman">
-                    <div id="hangmanDrawing1"></div>
-                    <div id="hangmanDrawing2"></div>
-                    <div id="hangmanDrawing3"></div>
-                    <div id="hangmanDrawing4"></div>
-                    <div id="hangmanDrawing5"></div>
-                    <div id="hangmanDrawing6"></div>
-                    <div id="hangmanDrawing7"></div>
-                    <div id="hangmanDrawing8"></div>
-                    <div id="hangmanDrawing9"></div>
-                </div> 
-            </div>
-        </div>
+      </div>
     </main>
     <footer>
-        <div class="container-bottom">
-            <div class="keyboard">
+      <div class="container-bottom">
+        <div class="keyboard">
+          <div class="first-row">
+            <button class="key" id="q"><p>q</p></button>
+            <button class="key" id="w"><p>w</p></button>
+            <button class="key" id="e"><p>e</p></button>
+            <button class="key" id="r"><p>r</p></button>
+            <button class="key" id="t"><p>t</p></button>
+            <button class="key" id="y"><p>y</p></button>
+            <button class="key" id="u"><p>u</p></button>
+            <button class="key" id="i"><p>i</p></button>
+            <button class="key" id="o"><p>o</p></button>
+            <button class="key" id="p"><p>p</p></button>
+          </div>
 
-                <div class="first-row">
-                    <button class="key" id="q"><p>q</p></button>
-                    <button class="key" id="w"><p>w</p></button>
-                    <button class="key" id="e"><p>e</p></button>
-                    <button class="key" id="r"><p>r</p></button>
-                    <button class="key" id="t"><p>t</p></button>
-                    <button class="key" id="y"><p>y</p></button>
-                    <button class="key" id="u"><p>u</p></button>
-                    <button class="key" id="i"><p>i</p></button>
-                    <button class="key" id="o"><p>o</p></button>
-                    <button class="key" id="p"><p>p</p></button>
-                </div>
+          <div class="second-row">
+            <button class="key" id="a"><p>a</p></button>
+            <button class="key" id="s"><p>s</p></button>
+            <button class="key" id="d"><p>d</p></button>
+            <button class="key" id="f"><p>f</p></button>
+            <button class="key" id="g"><p>g</p></button>
+            <button class="key" id="h"><p>h</p></button>
+            <button class="key" id="j"><p>j</p></button>
+            <button class="key" id="k"><p>k</p></button>
+            <button class="key" id="l"><p>l</p></button>
+          </div>
 
-                <div class="second-row">
-                    <button class="key" id="a"><p>a</p></button>
-                    <button class="key" id="s"><p>s</p></button>
-                    <button class="key" id="d"><p>d</p></button>
-                    <button class="key" id="f"><p>f</p></button>
-                    <button class="key" id="g"><p>g</p></button>
-                    <button class="key" id="h"><p>h</p></button>
-                    <button class="key" id="j"><p>j</p></button>
-                    <button class="key" id="k"><p>k</p></button>
-                    <button class="key" id="l"><p>l</p></button>
-                </div>
-
-                <div class="third-row">
-                    <button class="key" id="z"><p>z</p></button>
-                    <button class="key" id="x"><p>x</p></button>
-                    <button class="key" id="c"><p>c</p></button>
-                    <button class="key" id="v"><p>v</p></button>
-                    <button class="key" id="b"><p>b</p></button>
-                    <button class="key" id="n"><p>n</p></button>
-                    <button class="key" id="m"><p>m</p></button>
-                </div>
-                           
-            </div>
+          <div class="third-row">
+            <button class="key" id="z"><p>z</p></button>
+            <button class="key" id="x"><p>x</p></button>
+            <button class="key" id="c"><p>c</p></button>
+            <button class="key" id="v"><p>v</p></button>
+            <button class="key" id="b"><p>b</p></button>
+            <button class="key" id="n"><p>n</p></button>
+            <button class="key" id="m"><p>m</p></button>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
